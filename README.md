@@ -4,3 +4,8 @@ The use case is taken from [official ISTO Examples page](https://istio.io/docs/e
 Setup is generated through maven architype and taken from the [Official QUARKUS page](https://quarkus.io/guides/getting-started-guide)
 ## Help charts 
 The setup is taken from [KataCoda ISTO course](https://www.katacoda.com/courses/istio/deploy-istio-on-kubernetes)
+## compile native image
+```
+mvn package -Pnative -Dnative-image.docker-build=true
+docker build -f src/main/docker/Dockerfile.native -t agilesolutions/details .
+```
