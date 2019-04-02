@@ -10,7 +10,7 @@ public class DetailsResource {
 
     @GET
     @Produces(MediaType.TEXT_PLAIN)
-    public String hello() {
-        return "hello";
+    public String getDetails() {
+        return "excellent details";
     }
 }
